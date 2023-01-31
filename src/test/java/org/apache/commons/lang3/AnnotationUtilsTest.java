@@ -25,6 +25,7 @@ import static org.apache.commons.lang3.AnnotationUtilsTest.Stooge.SHEMP;
 import static org.junit.Assert.assertEquals;
 import static org.junit.Assert.assertFalse;
 import static org.junit.Assert.assertTrue;
+import static org.junit.Assert.fail;
 
 import java.lang.annotation.ElementType;
 import java.lang.annotation.Retention;
@@ -385,6 +386,16 @@ public class AnnotationUtilsTest {
     private Field field2;
     private Field field3;
     private Field field4;
+
+    @Test
+    public void testForNullPointerDereference_0() {
+        java.lang.Class<?> cls=null;
+        try {
+            ClassUtils.getAllInterfaces(cls);
+        } catch (NullPointerException e) {
+            fail("Null Pointer Exception 0");
+        }
+    }   
 
     @Before
     public void setup() throws Exception {
