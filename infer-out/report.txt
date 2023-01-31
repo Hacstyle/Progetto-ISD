@@ -1,0 +1,59 @@
+#0
+src/main/java/org/apache/commons/lang3/AnnotationUtils.java:74: error: Null Dereference
+  object returned by `getAllInterfaces(cls)` could be null and is dereferenced at line 74.
+  72.           protected String getShortClassName(java.lang.Class<?> cls) {
+  73.               Class<? extends Annotation> annotationType = null;
+  74. >             for (Class<?> iface : ClassUtils.getAllInterfaces(cls)) {
+  75.                   if (Annotation.class.isAssignableFrom(iface)) {
+  76.                       @SuppressWarnings("unchecked")
+
+#1
+src/main/java/org/apache/commons/lang3/CharSetUtils.java:194: error: Null Dereference
+  object `chars` last assigned on line 189 could be null and is dereferenced at line 194.
+  192.           int sz = chrs.length;
+  193.           for(int i=0; i<sz; i++) {
+  194. >             if(chars.contains(chrs[i]) == expect) {
+  195.                   buffer.append(chrs[i]);
+  196.               }
+
+#2
+src/main/java/org/apache/commons/lang3/builder/ToStringBuilder.java:226: error: Null Dereference
+  object `null` is dereferenced by call to `ToStringBuilder(...)` at line 226.
+  224.        */
+  225.       public ToStringBuilder(Object object) {
+  226. >         this(object, null, null);
+  227.       }
+  228.   
+
+#3
+src/main/java/org/apache/commons/lang3/concurrent/MultiBackgroundInitializer.java:167: warning: Thread Safety Violation
+  Read/Write race. Non-private method `MultiBackgroundInitializer.getTaskCount()` reads without synchronization from container `this.childInitializers` via call to `Map.values()`. Potentially races with write in method `MultiBackgroundInitializer.addInitializer(...)`.
+ Reporting because another access to the same memory occurs on a background thread, although this access may not.
+  165.           int result = 1;
+  166.   
+  167. >         for (BackgroundInitializer<?> bi : childInitializers.values()) {
+  168.               result += bi.getTaskCount();
+  169.           }
+
+#4
+src/main/java/org/apache/commons/lang3/math/NumberUtils.java:518: error: Null Dereference
+  object `f` last assigned on line 517 could be null and is dereferenced at line 518.
+  516.                       try {
+  517.                           Float f = NumberUtils.createFloat(numeric);
+  518. >                         if (!(f.isInfinite() || (f.floatValue() == 0.0F && !allZeros))) {
+  519.                               //If it's too big for a float or the float value = 0 and the string
+  520.                               //has non-zeros in it, then float does not have the precision we want
+
+#5
+src/main/java/org/apache/commons/lang3/math/NumberUtils.java:532: error: Null Dereference
+  object `d` last assigned on line 531 could be null and is dereferenced at line 532.
+  530.                       try {
+  531.                           Double d = NumberUtils.createDouble(numeric);
+  532. >                         if (!(d.isInfinite() || (d.floatValue() == 0.0D && !allZeros))) {
+  533.                               return d;
+  534.                           }
+
+Found 6 issues
+                        Issue Type(ISSUED_TYPE_ID): #
+                Null Dereference(NULL_DEREFERENCE): 5
+  Thread Safety Violation(THREAD_SAFETY_VIOLATION): 1

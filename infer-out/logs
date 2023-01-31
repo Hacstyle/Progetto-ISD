@@ -1,0 +1,548 @@
+[64595][      debug] Loading models took 67.79ms
+[64595][      debug] Sqlite write daemon: starting up
+[64595][      debug] Sqlite write daemon: set up complete, waiting for connections
+[64595][environment] CWD = /home/andre/Scrivania/Università/Magistrale/Ingegneria-dei-Sistemi-Distribuiti/Progetto-ISD
+[64595][environment] No .inferconfig file found
+[64595][environment] Project root = /home/andre/Scrivania/Università/Magistrale/Ingegneria-dei-Sistemi-Distribuiti/Progetto-ISD
+[64595][environment] INFER_ARGS =   @/tmp/args.tmp.12d941
+[64595][environment] command line arguments:   infer run -- ant
+[64595][environment] Available memory at startup: 4387 MB
+[64595][environment] Active checkers: self-in-block (C/C++/ObjC), parameter-not-null-checked (C/C++/ObjC), starvation (C/C++/ObjC, Java), siof (C/C++/ObjC), dotnet-resource-leak (C#/.Net), racerd (C/C++/ObjC, C#/.Net, Java), liveness (C/C++/ObjC), inefficient-keyset-iterator (Java), fragment-retains-view (Java), biabduction (C/C++/ObjC, C#/.Net, Java)
+[64595][environment] Scheduler: file
+[64595][environment] Cores used: 4
+[64595][environment] Infer version v1.1.0-5453911ea
+[64595][environment] Copyright 2009 - present Facebook. All Rights Reserved.
+[64595][environment] 
+[64595][   progress] Capturing in ant mode...
+[64595][environment] openjdk version "1.8.0_352"
+OpenJDK Runtime Environment (build 1.8.0_352-8u352-ga-1~22.04-b08)
+OpenJDK 64-Bit Server VM (build 25.352-b08, mixed mode)
+ javac 1.8.0_352
+ Apache Ant(TM) version 1.10.12 compiled on January 17 1970
+
+[64595][environment] 
+[64595][      debug] ant   
+
+[64778][environment] CWD = /home/andre/Scrivania/Università/Magistrale/Ingegneria-dei-Sistemi-Distribuiti/Progetto-ISD
+[64778][environment] No .inferconfig file found
+[64778][environment] Project root = /home/andre/Scrivania/Università/Magistrale/Ingegneria-dei-Sistemi-Distribuiti/Progetto-ISD
+[64778][environment] INFER_ARGS =   @/tmp/args.tmp.89c471
+[64778][environment] command line arguments:   /usr/local/lib/infer/infer/bin/infer capture
+[64778][environment]                           --continue -- javac -deprecation -d
+[64778][environment]                           /home/andre/Scrivania/Università/Magistrale/Ingegneria-dei-Sistemi-Distribuiti/Progetto-ISD/target/classes
+[64778][environment]                           -classpath
+[64778][environment]                           /home/andre/Scrivania/Università/Magistrale/Ingegneria-dei-Sistemi-Distribuiti/Progetto-ISD/target/classes
+[64778][environment]                           -sourcepath
+[64778][environment]                           /home/andre/Scrivania/Università/Magistrale/Ingegneria-dei-Sistemi-Distribuiti/Progetto-ISD/src/main/java
+[64778][environment]                           -target 1.5 -g -O -source 1.5
+[64778][environment]                           /home/andre/Scrivania/Università/Magistrale/Ingegneria-dei-Sistemi-Distribuiti/Progetto-ISD/src/main/java/org/apache/commons/lang3/AnnotationUtils.java
+[64778][environment]                           /home/andre/Scrivania/Università/Magistrale/Ingegneria-dei-Sistemi-Distribuiti/Progetto-ISD/src/main/java/org/apache/commons/lang3/ArrayUtils.java
+[64778][environment]                           /home/andre/Scrivania/Università/Magistrale/Ingegneria-dei-Sistemi-Distribuiti/Progetto-ISD/src/main/java/org/apache/commons/lang3/BitField.java
+[64778][environment]                           /home/andre/Scrivania/Università/Magistrale/Ingegneria-dei-Sistemi-Distribuiti/Progetto-ISD/src/main/java/org/apache/commons/lang3/BooleanUtils.java
+[64778][environment]                           /home/andre/Scrivania/Università/Magistrale/Ingegneria-dei-Sistemi-Distribuiti/Progetto-ISD/src/main/java/org/apache/commons/lang3/CharEncoding.java
+[64778][environment]                           /home/andre/Scrivania/Università/Magistrale/Ingegneria-dei-Sistemi-Distribuiti/Progetto-ISD/src/main/java/org/apache/commons/lang3/CharRange.java
+[64778][environment]                           /home/andre/Scrivania/Università/Magistrale/Ingegneria-dei-Sistemi-Distribuiti/Progetto-ISD/src/main/java/org/apache/commons/lang3/CharSequenceUtils.java
+[64778][environment]                           /home/andre/Scrivania/Università/Magistrale/Ingegneria-dei-Sistemi-Distribuiti/Progetto-ISD/src/main/java/org/apache/commons/lang3/CharSet.java
+[64778][environment]                           /home/andre/Scrivania/Università/Magistrale/Ingegneria-dei-Sistemi-Distribuiti/Progetto-ISD/src/main/java/org/apache/commons/lang3/CharSetUtils.java
+[64778][environment]                           /home/andre/Scrivania/Università/Magistrale/Ingegneria-dei-Sistemi-Distribuiti/Progetto-ISD/src/main/java/org/apache/commons/lang3/CharUtils.java
+[64778][environment]                           /home/andre/Scrivania/Università/Magistrale/Ingegneria-dei-Sistemi-Distribuiti/Progetto-ISD/src/main/java/org/apache/commons/lang3/ClassUtils.java
+[64778][environment]                           /home/andre/Scrivania/Università/Magistrale/Ingegneria-dei-Sistemi-Distribuiti/Progetto-ISD/src/main/java/org/apache/commons/lang3/EnumUtils.java
+[64778][environment]                           /home/andre/Scrivania/Università/Magistrale/Ingegneria-dei-Sistemi-Distribuiti/Progetto-ISD/src/main/java/org/apache/commons/lang3/JavaVersion.java
+[64778][environment]                           /home/andre/Scrivania/Università/Magistrale/Ingegneria-dei-Sistemi-Distribuiti/Progetto-ISD/src/main/java/org/apache/commons/lang3/LocaleUtils.java
+[64778][environment]                           /home/andre/Scrivania/Università/Magistrale/Ingegneria-dei-Sistemi-Distribuiti/Progetto-ISD/src/main/java/org/apache/commons/lang3/ObjectUtils.java
+[64778][environment]                           /home/andre/Scrivania/Università/Magistrale/Ingegneria-dei-Sistemi-Distribuiti/Progetto-ISD/src/main/java/org/apache/commons/lang3/RandomStringUtils.java
+[64778][environment]                           /home/andre/Scrivania/Università/Magistrale/Ingegneria-dei-Sistemi-Distribuiti/Progetto-ISD/src/main/java/org/apache/commons/lang3/Range.java
+[64778][environment]                           /home/andre/Scrivania/Università/Magistrale/Ingegneria-dei-Sistemi-Distribuiti/Progetto-ISD/src/main/java/org/apache/commons/lang3/SerializationException.java
+[64778][environment]                           /home/andre/Scrivania/Università/Magistrale/Ingegneria-dei-Sistemi-Distribuiti/Progetto-ISD/src/main/java/org/apache/commons/lang3/SerializationUtils.java
+[64778][environment]                           /home/andre/Scrivania/Università/Magistrale/Ingegneria-dei-Sistemi-Distribuiti/Progetto-ISD/src/main/java/org/apache/commons/lang3/StringEscapeUtils.java
+[64778][environment]                           /home/andre/Scrivania/Università/Magistrale/Ingegneria-dei-Sistemi-Distribuiti/Progetto-ISD/src/main/java/org/apache/commons/lang3/StringUtils.java
+[64778][environment]                           /home/andre/Scrivania/Università/Magistrale/Ingegneria-dei-Sistemi-Distribuiti/Progetto-ISD/src/main/java/org/apache/commons/lang3/SystemUtils.java
+[64778][environment]                           /home/andre/Scrivania/Università/Magistrale/Ingegneria-dei-Sistemi-Distribuiti/Progetto-ISD/src/main/java/org/apache/commons/lang3/Validate.java
+[64778][environment]                           /home/andre/Scrivania/Università/Magistrale/Ingegneria-dei-Sistemi-Distribuiti/Progetto-ISD/src/main/java/org/apache/commons/lang3/builder/Builder.java
+[64778][environment]                           /home/andre/Scrivania/Università/Magistrale/Ingegneria-dei-Sistemi-Distribuiti/Progetto-ISD/src/main/java/org/apache/commons/lang3/builder/CompareToBuilder.java
+[64778][environment]                           /home/andre/Scrivania/Università/Magistrale/Ingegneria-dei-Sistemi-Distribuiti/Progetto-ISD/src/main/java/org/apache/commons/lang3/builder/EqualsBuilder.java
+[64778][environment]                           /home/andre/Scrivania/Università/Magistrale/Ingegneria-dei-Sistemi-Distribuiti/Progetto-ISD/src/main/java/org/apache/commons/lang3/builder/HashCodeBuilder.java
+[64778][environment]                           /home/andre/Scrivania/Università/Magistrale/Ingegneria-dei-Sistemi-Distribuiti/Progetto-ISD/src/main/java/org/apache/commons/lang3/builder/IDKey.java
+[64778][environment]                           /home/andre/Scrivania/Università/Magistrale/Ingegneria-dei-Sistemi-Distribuiti/Progetto-ISD/src/main/java/org/apache/commons/lang3/builder/ReflectionToStringBuilder.java
+[64778][environment]                           /home/andre/Scrivania/Università/Magistrale/Ingegneria-dei-Sistemi-Distribuiti/Progetto-ISD/src/main/java/org/apache/commons/lang3/builder/StandardToStringStyle.java
+[64778][environment]                           /home/andre/Scrivania/Università/Magistrale/Ingegneria-dei-Sistemi-Distribuiti/Progetto-ISD/src/main/java/org/apache/commons/lang3/builder/ToStringBuilder.java
+[64778][environment]                           /home/andre/Scrivania/Università/Magistrale/Ingegneria-dei-Sistemi-Distribuiti/Progetto-ISD/src/main/java/org/apache/commons/lang3/builder/ToStringStyle.java
+[64778][environment]                           /home/andre/Scrivania/Università/Magistrale/Ingegneria-dei-Sistemi-Distribuiti/Progetto-ISD/src/main/java/org/apache/commons/lang3/concurrent/AtomicInitializer.java
+[64778][environment]                           /home/andre/Scrivania/Università/Magistrale/Ingegneria-dei-Sistemi-Distribuiti/Progetto-ISD/src/main/java/org/apache/commons/lang3/concurrent/AtomicSafeInitializer.java
+[64778][environment]                           /home/andre/Scrivania/Università/Magistrale/Ingegneria-dei-Sistemi-Distribuiti/Progetto-ISD/src/main/java/org/apache/commons/lang3/concurrent/BackgroundInitializer.java
+[64778][environment]                           /home/andre/Scrivania/Università/Magistrale/Ingegneria-dei-Sistemi-Distribuiti/Progetto-ISD/src/main/java/org/apache/commons/lang3/concurrent/BasicThreadFactory.java
+[64778][environment]                           /home/andre/Scrivania/Università/Magistrale/Ingegneria-dei-Sistemi-Distribuiti/Progetto-ISD/src/main/java/org/apache/commons/lang3/concurrent/CallableBackgroundInitializer.java
+[64778][environment]                           /home/andre/Scrivania/Università/Magistrale/Ingegneria-dei-Sistemi-Distribuiti/Progetto-ISD/src/main/java/org/apache/commons/lang3/concurrent/ConcurrentException.java
+[64778][environment]                           /home/andre/Scrivania/Università/Magistrale/Ingegneria-dei-Sistemi-Distribuiti/Progetto-ISD/src/main/java/org/apache/commons/lang3/concurrent/ConcurrentInitializer.java
+[64778][environment]                           /home/andre/Scrivania/Università/Magistrale/Ingegneria-dei-Sistemi-Distribuiti/Progetto-ISD/src/main/java/org/apache/commons/lang3/concurrent/ConcurrentRuntimeException.java
+[64778][environment]                           /home/andre/Scrivania/Università/Magistrale/Ingegneria-dei-Sistemi-Distribuiti/Progetto-ISD/src/main/java/org/apache/commons/lang3/concurrent/ConcurrentUtils.java
+[64778][environment]                           /home/andre/Scrivania/Università/Magistrale/Ingegneria-dei-Sistemi-Distribuiti/Progetto-ISD/src/main/java/org/apache/commons/lang3/concurrent/ConstantInitializer.java
+[64778][environment]                           /home/andre/Scrivania/Università/Magistrale/Ingegneria-dei-Sistemi-Distribuiti/Progetto-ISD/src/main/java/org/apache/commons/lang3/concurrent/LazyInitializer.java
+[64778][environment]                           /home/andre/Scrivania/Università/Magistrale/Ingegneria-dei-Sistemi-Distribuiti/Progetto-ISD/src/main/java/org/apache/commons/lang3/concurrent/MultiBackgroundInitializer.java
+[64778][environment]                           /home/andre/Scrivania/Università/Magistrale/Ingegneria-dei-Sistemi-Distribuiti/Progetto-ISD/src/main/java/org/apache/commons/lang3/concurrent/TimedSemaphore.java
+[64778][environment]                           /home/andre/Scrivania/Università/Magistrale/Ingegneria-dei-Sistemi-Distribuiti/Progetto-ISD/src/main/java/org/apache/commons/lang3/event/EventListenerSupport.java
+[64778][environment]                           /home/andre/Scrivania/Università/Magistrale/Ingegneria-dei-Sistemi-Distribuiti/Progetto-ISD/src/main/java/org/apache/commons/lang3/event/EventUtils.java
+[64778][environment]                           /home/andre/Scrivania/Università/Magistrale/Ingegneria-dei-Sistemi-Distribuiti/Progetto-ISD/src/main/java/org/apache/commons/lang3/exception/CloneFailedException.java
+[64778][environment]                           /home/andre/Scrivania/Università/Magistrale/Ingegneria-dei-Sistemi-Distribuiti/Progetto-ISD/src/main/java/org/apache/commons/lang3/exception/ContextedException.java
+[64778][environment]                           /home/andre/Scrivania/Università/Magistrale/Ingegneria-dei-Sistemi-Distribuiti/Progetto-ISD/src/main/java/org/apache/commons/lang3/exception/ContextedRuntimeException.java
+[64778][environment]                           /home/andre/Scrivania/Università/Magistrale/Ingegneria-dei-Sistemi-Distribuiti/Progetto-ISD/src/main/java/org/apache/commons/lang3/exception/DefaultExceptionContext.java
+[64778][environment]                           /home/andre/Scrivania/Università/Magistrale/Ingegneria-dei-Sistemi-Distribuiti/Progetto-ISD/src/main/java/org/apache/commons/lang3/exception/ExceptionContext.java
+[64778][environment]                           /home/andre/Scrivania/Università/Magistrale/Ingegneria-dei-Sistemi-Distribuiti/Progetto-ISD/src/main/java/org/apache/commons/lang3/exception/ExceptionUtils.java
+[64778][environment]                           /home/andre/Scrivania/Università/Magistrale/Ingegneria-dei-Sistemi-Distribuiti/Progetto-ISD/src/main/java/org/apache/commons/lang3/math/Fraction.java
+[64778][environment]                           /home/andre/Scrivania/Università/Magistrale/Ingegneria-dei-Sistemi-Distribuiti/Progetto-ISD/src/main/java/org/apache/commons/lang3/math/IEEE754rUtils.java
+[64778][environment]                           /home/andre/Scrivania/Università/Magistrale/Ingegneria-dei-Sistemi-Distribuiti/Progetto-ISD/src/main/java/org/apache/commons/lang3/math/NumberUtils.java
+[64778][environment]                           /home/andre/Scrivania/Università/Magistrale/Ingegneria-dei-Sistemi-Distribuiti/Progetto-ISD/src/main/java/org/apache/commons/lang3/mutable/Mutable.java
+[64778][environment]                           /home/andre/Scrivania/Università/Magistrale/Ingegneria-dei-Sistemi-Distribuiti/Progetto-ISD/src/main/java/org/apache/commons/lang3/mutable/MutableBoolean.java
+[64778][environment]                           /home/andre/Scrivania/Università/Magistrale/Ingegneria-dei-Sistemi-Distribuiti/Progetto-ISD/src/main/java/org/apache/commons/lang3/mutable/MutableByte.java
+[64778][environment]                           /home/andre/Scrivania/Università/Magistrale/Ingegneria-dei-Sistemi-Distribuiti/Progetto-ISD/src/main/java/org/apache/commons/lang3/mutable/MutableDouble.java
+[64778][environment]                           /home/andre/Scrivania/Università/Magistrale/Ingegneria-dei-Sistemi-Distribuiti/Progetto-ISD/src/main/java/org/apache/commons/lang3/mutable/MutableFloat.java
+[64778][environment]                           /home/andre/Scrivania/Università/Magistrale/Ingegneria-dei-Sistemi-Distribuiti/Progetto-ISD/src/main/java/org/apache/commons/lang3/mutable/MutableInt.java
+[64778][environment]                           /home/andre/Scrivania/Università/Magistrale/Ingegneria-dei-Sistemi-Distribuiti/Progetto-ISD/src/main/java/org/apache/commons/lang3/mutable/MutableLong.java
+[64778][environment]                           /home/andre/Scrivania/Università/Magistrale/Ingegneria-dei-Sistemi-Distribuiti/Progetto-ISD/src/main/java/org/apache/commons/lang3/mutable/MutableObject.java
+[64778][environment]                           /home/andre/Scrivania/Università/Magistrale/Ingegneria-dei-Sistemi-Distribuiti/Progetto-ISD/src/main/java/org/apache/commons/lang3/mutable/MutableShort.java
+[64778][environment]                           /home/andre/Scrivania/Università/Magistrale/Ingegneria-dei-Sistemi-Distribuiti/Progetto-ISD/src/main/java/org/apache/commons/lang3/reflect/ConstructorUtils.java
+[64778][environment]                           /home/andre/Scrivania/Università/Magistrale/Ingegneria-dei-Sistemi-Distribuiti/Progetto-ISD/src/main/java/org/apache/commons/lang3/reflect/FieldUtils.java
+[64778][environment]                           /home/andre/Scrivania/Università/Magistrale/Ingegneria-dei-Sistemi-Distribuiti/Progetto-ISD/src/main/java/org/apache/commons/lang3/reflect/MemberUtils.java
+[64778][environment]                           /home/andre/Scrivania/Università/Magistrale/Ingegneria-dei-Sistemi-Distribuiti/Progetto-ISD/src/main/java/org/apache/commons/lang3/reflect/MethodUtils.java
+[64778][environment]                           /home/andre/Scrivania/Università/Magistrale/Ingegneria-dei-Sistemi-Distribuiti/Progetto-ISD/src/main/java/org/apache/commons/lang3/reflect/TypeUtils.java
+[64778][environment]                           /home/andre/Scrivania/Università/Magistrale/Ingegneria-dei-Sistemi-Distribuiti/Progetto-ISD/src/main/java/org/apache/commons/lang3/text/CompositeFormat.java
+[64778][environment]                           /home/andre/Scrivania/Università/Magistrale/Ingegneria-dei-Sistemi-Distribuiti/Progetto-ISD/src/main/java/org/apache/commons/lang3/text/ExtendedMessageFormat.java
+[64778][environment]                           /home/andre/Scrivania/Università/Magistrale/Ingegneria-dei-Sistemi-Distribuiti/Progetto-ISD/src/main/java/org/apache/commons/lang3/text/FormatFactory.java
+[64778][environment]                           /home/andre/Scrivania/Università/Magistrale/Ingegneria-dei-Sistemi-Distribuiti/Progetto-ISD/src/main/java/org/apache/commons/lang3/text/FormattableUtils.java
+[64778][environment]                           /home/andre/Scrivania/Università/Magistrale/Ingegneria-dei-Sistemi-Distribuiti/Progetto-ISD/src/main/java/org/apache/commons/lang3/text/StrBuilder.java
+[64778][environment]                           /home/andre/Scrivania/Università/Magistrale/Ingegneria-dei-Sistemi-Distribuiti/Progetto-ISD/src/main/java/org/apache/commons/lang3/text/StrLookup.java
+[64778][environment]                           /home/andre/Scrivania/Università/Magistrale/Ingegneria-dei-Sistemi-Distribuiti/Progetto-ISD/src/main/java/org/apache/commons/lang3/text/StrMatcher.java
+[64778][environment]                           /home/andre/Scrivania/Università/Magistrale/Ingegneria-dei-Sistemi-Distribuiti/Progetto-ISD/src/main/java/org/apache/commons/lang3/text/StrSubstitutor.java
+[64778][environment]                           /home/andre/Scrivania/Università/Magistrale/Ingegneria-dei-Sistemi-Distribuiti/Progetto-ISD/src/main/java/org/apache/commons/lang3/text/StrTokenizer.java
+[64778][environment]                           /home/andre/Scrivania/Università/Magistrale/Ingegneria-dei-Sistemi-Distribuiti/Progetto-ISD/src/main/java/org/apache/commons/lang3/text/WordUtils.java
+[64778][environment]                           /home/andre/Scrivania/Università/Magistrale/Ingegneria-dei-Sistemi-Distribuiti/Progetto-ISD/src/main/java/org/apache/commons/lang3/text/translate/AggregateTranslator.java
+[64778][environment]                           /home/andre/Scrivania/Università/Magistrale/Ingegneria-dei-Sistemi-Distribuiti/Progetto-ISD/src/main/java/org/apache/commons/lang3/text/translate/CharSequenceTranslator.java
+[64778][environment]                           /home/andre/Scrivania/Università/Magistrale/Ingegneria-dei-Sistemi-Distribuiti/Progetto-ISD/src/main/java/org/apache/commons/lang3/text/translate/CodePointTranslator.java
+[64778][environment]                           /home/andre/Scrivania/Università/Magistrale/Ingegneria-dei-Sistemi-Distribuiti/Progetto-ISD/src/main/java/org/apache/commons/lang3/text/translate/EntityArrays.java
+[64778][environment]                           /home/andre/Scrivania/Università/Magistrale/Ingegneria-dei-Sistemi-Distribuiti/Progetto-ISD/src/main/java/org/apache/commons/lang3/text/translate/LookupTranslator.java
+[64778][environment]                           /home/andre/Scrivania/Università/Magistrale/Ingegneria-dei-Sistemi-Distribuiti/Progetto-ISD/src/main/java/org/apache/commons/lang3/text/translate/NumericEntityEscaper.java
+[64778][environment]                           /home/andre/Scrivania/Università/Magistrale/Ingegneria-dei-Sistemi-Distribuiti/Progetto-ISD/src/main/java/org/apache/commons/lang3/text/translate/NumericEntityUnescaper.java
+[64778][environment]                           /home/andre/Scrivania/Università/Magistrale/Ingegneria-dei-Sistemi-Distribuiti/Progetto-ISD/src/main/java/org/apache/commons/lang3/text/translate/OctalUnescaper.java
+[64778][environment]                           /home/andre/Scrivania/Università/Magistrale/Ingegneria-dei-Sistemi-Distribuiti/Progetto-ISD/src/main/java/org/apache/commons/lang3/text/translate/UnicodeEscaper.java
+[64778][environment]                           /home/andre/Scrivania/Università/Magistrale/Ingegneria-dei-Sistemi-Distribuiti/Progetto-ISD/src/main/java/org/apache/commons/lang3/text/translate/UnicodeUnescaper.java
+[64778][environment]                           /home/andre/Scrivania/Università/Magistrale/Ingegneria-dei-Sistemi-Distribuiti/Progetto-ISD/src/main/java/org/apache/commons/lang3/time/DateFormatUtils.java
+[64778][environment]                           /home/andre/Scrivania/Università/Magistrale/Ingegneria-dei-Sistemi-Distribuiti/Progetto-ISD/src/main/java/org/apache/commons/lang3/time/DateUtils.java
+[64778][environment]                           /home/andre/Scrivania/Università/Magistrale/Ingegneria-dei-Sistemi-Distribuiti/Progetto-ISD/src/main/java/org/apache/commons/lang3/time/DurationFormatUtils.java
+[64778][environment]                           /home/andre/Scrivania/Università/Magistrale/Ingegneria-dei-Sistemi-Distribuiti/Progetto-ISD/src/main/java/org/apache/commons/lang3/time/FastDateFormat.java
+[64778][environment]                           /home/andre/Scrivania/Università/Magistrale/Ingegneria-dei-Sistemi-Distribuiti/Progetto-ISD/src/main/java/org/apache/commons/lang3/time/FormatCache.java
+[64778][environment]                           /home/andre/Scrivania/Università/Magistrale/Ingegneria-dei-Sistemi-Distribuiti/Progetto-ISD/src/main/java/org/apache/commons/lang3/time/StopWatch.java
+[64778][environment]                           /home/andre/Scrivania/Università/Magistrale/Ingegneria-dei-Sistemi-Distribuiti/Progetto-ISD/src/main/java/org/apache/commons/lang3/tuple/ImmutablePair.java
+[64778][environment]                           /home/andre/Scrivania/Università/Magistrale/Ingegneria-dei-Sistemi-Distribuiti/Progetto-ISD/src/main/java/org/apache/commons/lang3/tuple/MutablePair.java
+[64778][environment]                           /home/andre/Scrivania/Università/Magistrale/Ingegneria-dei-Sistemi-Distribuiti/Progetto-ISD/src/main/java/org/apache/commons/lang3/tuple/Pair.java
+[64778][environment] Available memory at startup: 4336 MB
+[64778][environment] Active checkers: self-in-block (C/C++/ObjC), parameter-not-null-checked (C/C++/ObjC), starvation (C/C++/ObjC, Java), siof (C/C++/ObjC), dotnet-resource-leak (C#/.Net), racerd (C/C++/ObjC, C#/.Net, Java), liveness (C/C++/ObjC), inefficient-keyset-iterator (Java), fragment-retains-view (Java), biabduction (C/C++/ObjC, C#/.Net, Java)
+[64778][      debug] Current working directory: '/home/andre/Scrivania/Università/Magistrale/Ingegneria-dei-Sistemi-Distribuiti/Progetto-ISD'
+[64778][      debug] Trying to execute: javac '-J-Duser.language=en' '@/home/andre/Scrivania/Università/Magistrale/Ingegneria-dei-Sistemi-Distribuiti/Progetto-ISD/infer-out/tmp/javac_args.tmp.31dc12' 2>'/home/andre/Scrivania/Università/Magistrale/Ingegneria-dei-Sistemi-Distribuiti/Progetto-ISD/infer-out/tmp/javac.tmp.07d83b.out'
+[64778][      debug] *** Success. Logs:
+[64778][      debug] Translating 99 source files (151 classes)
+[64778][      debug] done capturing all files
+[64778][      debug] GC stats for capture:
+[64778][      debug]   minor_words: 1.20067e+08
+[64778][      debug]   promoted_words: 1.02607e+07
+[64778][      debug]   major_words: 1.30115e+07
+[64778][      debug]   minor_collections: 226
+[64778][      debug]   major_collections: 31
+[64778][      debug]   compactions: 0
+[64778][      debug]   top_heap_words: 6201856
+[64778][      debug]   
+[64778][      debug] GC stats for main_process_full:
+[64778][      debug]   minor_words: 1.22955e+08
+[64778][      debug]   promoted_words: 1.07132e+07
+[64778][      debug]   major_words: 1.34975e+07
+[64778][      debug]   minor_collections: 234
+[64778][      debug]   major_collections: 32
+[64778][      debug]   compactions: 0
+[64778][      debug]   top_heap_words: 6201856
+[64778][      debug]   
+[64778][environment] Scheduler: file
+[64778][environment] Cores used: 4
+[64778][environment] [64595][      debug] GC stats for capture:
+[64595][      debug]   minor_words: 96859
+[64595][      debug]   promoted_words: 0
+[64595][      debug]   major_words: 59852
+[64595][      debug]   minor_collections: 0
+[64595][      debug]   major_collections: 0
+[64595][      debug]   compactions: 0
+[64595][      debug]   top_heap_words: 1157632
+[64595][      debug]   
+[64595][environment] Parallel jobs: 4
+[64595][   progress] Found 99 source files to analyze in /home/andre/Scrivania/Università/Magistrale/Ingegneria-dei-Sistemi-Distribuiti/Progetto-ISD/infer-out
+[64856][   progress] src/main/java/org/apache/commons/lang3/text/ExtendedMessageFormat.java starting
+[64854][   progress] src/main/java/org/apache/commons/lang3/builder/HashCodeBuilder.java starting
+[64857][   progress] src/main/java/org/apache/commons/lang3/JavaVersion.java starting
+[64855][   progress] src/main/java/org/apache/commons/lang3/text/CompositeFormat.java starting
+[64855][   progress] src/main/java/org/apache/commons/lang3/text/CompositeFormat.java DONE
+[64855][   progress] src/main/java/org/apache/commons/lang3/ObjectUtils.java starting
+[64857][   progress] src/main/java/org/apache/commons/lang3/JavaVersion.java DONE
+[64857][   progress] src/main/java/org/apache/commons/lang3/tuple/Pair.java starting
+[64855][   progress] src/main/java/org/apache/commons/lang3/ObjectUtils.java DONE
+[64855][   progress] src/main/java/org/apache/commons/lang3/StringEscapeUtils.java starting
+[64854][   progress] src/main/java/org/apache/commons/lang3/builder/HashCodeBuilder.java DONE
+[64854][   progress] src/main/java/org/apache/commons/lang3/time/DateUtils.java starting
+[64856][   progress] src/main/java/org/apache/commons/lang3/text/ExtendedMessageFormat.java DONE
+[64856][   progress] src/main/java/org/apache/commons/lang3/text/FormatFactory.java starting
+[64856][   progress] src/main/java/org/apache/commons/lang3/text/FormatFactory.java DONE
+[64856][   progress] src/main/java/org/apache/commons/lang3/event/EventListenerSupport.java starting
+[64857][   progress] src/main/java/org/apache/commons/lang3/tuple/Pair.java DONE
+[64857][   progress] src/main/java/org/apache/commons/lang3/text/translate/NumericEntityUnescaper.java starting
+[64857][   progress] src/main/java/org/apache/commons/lang3/text/translate/NumericEntityUnescaper.java DONE
+[64857][   progress] src/main/java/org/apache/commons/lang3/SerializationException.java starting
+[64857][   progress] src/main/java/org/apache/commons/lang3/SerializationException.java DONE
+[64857][   progress] src/main/java/org/apache/commons/lang3/concurrent/TimedSemaphore.java starting
+[64856][   progress] src/main/java/org/apache/commons/lang3/event/EventListenerSupport.java DONE
+[64856][   progress] src/main/java/org/apache/commons/lang3/StringUtils.java starting
+[64857][   progress] src/main/java/org/apache/commons/lang3/concurrent/TimedSemaphore.java DONE
+[64857][   progress] src/main/java/org/apache/commons/lang3/reflect/MethodUtils.java starting
+[64854][   progress] src/main/java/org/apache/commons/lang3/time/DateUtils.java DONE
+[64854][   progress] src/main/java/org/apache/commons/lang3/time/DateFormatUtils.java starting
+[64854][   progress] src/main/java/org/apache/commons/lang3/time/DateFormatUtils.java DONE
+[64854][   progress] src/main/java/org/apache/commons/lang3/text/StrMatcher.java starting
+[64854][   progress] src/main/java/org/apache/commons/lang3/text/StrMatcher.java DONE
+[64854][   progress] src/main/java/org/apache/commons/lang3/mutable/MutableShort.java starting
+[64855][   progress] src/main/java/org/apache/commons/lang3/StringEscapeUtils.java DONE
+[64855][   progress] src/main/java/org/apache/commons/lang3/concurrent/AtomicSafeInitializer.java starting
+[64855][   progress] src/main/java/org/apache/commons/lang3/concurrent/AtomicSafeInitializer.java DONE
+[64855][   progress] src/main/java/org/apache/commons/lang3/text/translate/OctalUnescaper.java starting
+[64854][   progress] src/main/java/org/apache/commons/lang3/mutable/MutableShort.java DONE
+[64854][   progress] src/main/java/org/apache/commons/lang3/builder/Builder.java starting
+[64854][   progress] src/main/java/org/apache/commons/lang3/builder/Builder.java DONE
+[64854][   progress] src/main/java/org/apache/commons/lang3/text/translate/UnicodeEscaper.java starting
+[64854][   progress] src/main/java/org/apache/commons/lang3/text/translate/UnicodeEscaper.java DONE
+[64854][   progress] src/main/java/org/apache/commons/lang3/CharSetUtils.java starting
+[64855][   progress] src/main/java/org/apache/commons/lang3/text/translate/OctalUnescaper.java DONE
+[64855][   progress] src/main/java/org/apache/commons/lang3/text/translate/AggregateTranslator.java starting
+[64855][   progress] src/main/java/org/apache/commons/lang3/text/translate/AggregateTranslator.java DONE
+[64855][   progress] src/main/java/org/apache/commons/lang3/reflect/MemberUtils.java starting
+[64857][   progress] src/main/java/org/apache/commons/lang3/reflect/MethodUtils.java DONE
+[64857][   progress] src/main/java/org/apache/commons/lang3/math/Fraction.java starting
+[64854][   progress] src/main/java/org/apache/commons/lang3/CharSetUtils.java DONE
+[64854][   progress] src/main/java/org/apache/commons/lang3/builder/StandardToStringStyle.java starting
+[64854][   progress] src/main/java/org/apache/commons/lang3/builder/StandardToStringStyle.java DONE
+[64854][   progress] src/main/java/org/apache/commons/lang3/concurrent/ConcurrentException.java starting
+[64854][   progress] src/main/java/org/apache/commons/lang3/concurrent/ConcurrentException.java DONE
+[64854][   progress] src/main/java/org/apache/commons/lang3/LocaleUtils.java starting
+[64855][   progress] src/main/java/org/apache/commons/lang3/reflect/MemberUtils.java DONE
+[64855][   progress] src/main/java/org/apache/commons/lang3/text/translate/NumericEntityEscaper.java starting
+[64855][   progress] src/main/java/org/apache/commons/lang3/text/translate/NumericEntityEscaper.java DONE
+[64855][   progress] src/main/java/org/apache/commons/lang3/BooleanUtils.java starting
+[64854][   progress] src/main/java/org/apache/commons/lang3/LocaleUtils.java DONE
+[64854][   progress] src/main/java/org/apache/commons/lang3/builder/ToStringBuilder.java starting
+[64857][   progress] src/main/java/org/apache/commons/lang3/math/Fraction.java DONE
+[64857][   progress] src/main/java/org/apache/commons/lang3/EnumUtils.java starting
+[64857][   progress] src/main/java/org/apache/commons/lang3/EnumUtils.java DONE
+[64857][   progress] src/main/java/org/apache/commons/lang3/Range.java starting
+[64855][   progress] src/main/java/org/apache/commons/lang3/BooleanUtils.java DONE
+[64855][   progress] src/main/java/org/apache/commons/lang3/concurrent/BackgroundInitializer.java starting
+[64855][   progress] src/main/java/org/apache/commons/lang3/concurrent/BackgroundInitializer.java DONE
+[64855][   progress] src/main/java/org/apache/commons/lang3/text/StrBuilder.java starting
+[64857][   progress] src/main/java/org/apache/commons/lang3/Range.java DONE
+[64857][   progress] src/main/java/org/apache/commons/lang3/text/StrSubstitutor.java starting
+[64857][   progress] src/main/java/org/apache/commons/lang3/text/StrSubstitutor.java DONE
+[64857][   progress] src/main/java/org/apache/commons/lang3/CharSequenceUtils.java starting
+[64857][   progress] src/main/java/org/apache/commons/lang3/CharSequenceUtils.java DONE
+[64857][   progress] src/main/java/org/apache/commons/lang3/BitField.java starting
+[64857][   progress] src/main/java/org/apache/commons/lang3/BitField.java DONE
+[64857][   progress] src/main/java/org/apache/commons/lang3/concurrent/ConcurrentInitializer.java starting
+[64857][   progress] src/main/java/org/apache/commons/lang3/concurrent/ConcurrentInitializer.java DONE
+[64857][   progress] src/main/java/org/apache/commons/lang3/builder/ToStringStyle.java starting
+[64857][   progress] src/main/java/org/apache/commons/lang3/builder/ToStringStyle.java DONE
+[64857][   progress] src/main/java/org/apache/commons/lang3/mutable/MutableByte.java starting
+[64857][   progress] src/main/java/org/apache/commons/lang3/mutable/MutableByte.java DONE
+[64857][   progress] src/main/java/org/apache/commons/lang3/exception/ExceptionUtils.java starting
+[64857][   progress] src/main/java/org/apache/commons/lang3/exception/ExceptionUtils.java DONE
+[64857][   progress] src/main/java/org/apache/commons/lang3/concurrent/CallableBackgroundInitializer.java starting
+[64857][   progress] src/main/java/org/apache/commons/lang3/concurrent/CallableBackgroundInitializer.java DONE
+[64857][   progress] src/main/java/org/apache/commons/lang3/math/IEEE754rUtils.java starting
+[64857][   progress] src/main/java/org/apache/commons/lang3/math/IEEE754rUtils.java DONE
+[64857][   progress] src/main/java/org/apache/commons/lang3/text/translate/CharSequenceTranslator.java starting
+[64857][   progress] src/main/java/org/apache/commons/lang3/text/translate/CharSequenceTranslator.java DONE
+[64857][   progress] src/main/java/org/apache/commons/lang3/reflect/FieldUtils.java starting
+[64857][   progress] src/main/java/org/apache/commons/lang3/reflect/FieldUtils.java DONE
+[64857][   progress] src/main/java/org/apache/commons/lang3/time/FormatCache.java starting
+[64857][   progress] src/main/java/org/apache/commons/lang3/time/FormatCache.java DONE
+[64857][   progress] src/main/java/org/apache/commons/lang3/exception/ExceptionContext.java starting
+[64857][   progress] src/main/java/org/apache/commons/lang3/exception/ExceptionContext.java DONE
+[64857][   progress] src/main/java/org/apache/commons/lang3/text/StrLookup.java starting
+[64857][   progress] src/main/java/org/apache/commons/lang3/text/StrLookup.java DONE
+[64857][   progress] src/main/java/org/apache/commons/lang3/time/StopWatch.java starting
+[64854][   progress] src/main/java/org/apache/commons/lang3/builder/ToStringBuilder.java DONE
+[64854][   progress] src/main/java/org/apache/commons/lang3/text/translate/CodePointTranslator.java starting
+[64854][   progress] src/main/java/org/apache/commons/lang3/text/translate/CodePointTranslator.java DONE
+[64854][   progress] src/main/java/org/apache/commons/lang3/mutable/Mutable.java starting
+[64854][   progress] src/main/java/org/apache/commons/lang3/mutable/Mutable.java DONE
+[64854][   progress] src/main/java/org/apache/commons/lang3/reflect/ConstructorUtils.java starting
+[64856][   progress] src/main/java/org/apache/commons/lang3/StringUtils.java DONE
+[64856][   progress] src/main/java/org/apache/commons/lang3/CharEncoding.java starting
+[64856][   progress] src/main/java/org/apache/commons/lang3/CharEncoding.java DONE
+[64856][   progress] src/main/java/org/apache/commons/lang3/exception/ContextedException.java starting
+[64856][   progress] src/main/java/org/apache/commons/lang3/exception/ContextedException.java DONE
+[64856][   progress] src/main/java/org/apache/commons/lang3/mutable/MutableDouble.java starting
+[64854][   progress] src/main/java/org/apache/commons/lang3/reflect/ConstructorUtils.java DONE
+[64854][   progress] src/main/java/org/apache/commons/lang3/concurrent/AtomicInitializer.java starting
+[64854][   progress] src/main/java/org/apache/commons/lang3/concurrent/AtomicInitializer.java DONE
+[64854][   progress] src/main/java/org/apache/commons/lang3/mutable/MutableFloat.java starting
+[64857][   progress] src/main/java/org/apache/commons/lang3/time/StopWatch.java DONE
+[64857][   progress] src/main/java/org/apache/commons/lang3/builder/IDKey.java starting
+[64856][   progress] src/main/java/org/apache/commons/lang3/mutable/MutableDouble.java DONE
+[64856][   progress] src/main/java/org/apache/commons/lang3/ArrayUtils.java starting
+[64857][   progress] src/main/java/org/apache/commons/lang3/builder/IDKey.java DONE
+[64857][   progress] src/main/java/org/apache/commons/lang3/concurrent/ConcurrentRuntimeException.java starting
+[64857][   progress] src/main/java/org/apache/commons/lang3/concurrent/ConcurrentRuntimeException.java DONE
+[64857][   progress] src/main/java/org/apache/commons/lang3/reflect/TypeUtils.java starting
+[64854][   progress] src/main/java/org/apache/commons/lang3/mutable/MutableFloat.java DONE
+[64854][   progress] src/main/java/org/apache/commons/lang3/builder/ReflectionToStringBuilder.java starting
+[64854][   progress] src/main/java/org/apache/commons/lang3/builder/ReflectionToStringBuilder.java DONE
+[64854][   progress] src/main/java/org/apache/commons/lang3/CharUtils.java starting
+[64854][   progress] src/main/java/org/apache/commons/lang3/CharUtils.java DONE
+[64854][   progress] src/main/java/org/apache/commons/lang3/exception/DefaultExceptionContext.java starting
+[64854][   progress] src/main/java/org/apache/commons/lang3/exception/DefaultExceptionContext.java DONE
+[64854][   progress] src/main/java/org/apache/commons/lang3/RandomStringUtils.java starting
+[64854][   progress] src/main/java/org/apache/commons/lang3/RandomStringUtils.java DONE
+[64854][   progress] src/main/java/org/apache/commons/lang3/concurrent/MultiBackgroundInitializer.java starting
+[64854][   progress] src/main/java/org/apache/commons/lang3/concurrent/MultiBackgroundInitializer.java DONE
+[64854][   progress] src/main/java/org/apache/commons/lang3/CharRange.java starting
+[64854][   progress] src/main/java/org/apache/commons/lang3/CharRange.java DONE
+[64854][   progress] src/main/java/org/apache/commons/lang3/ClassUtils.java starting
+[64854][   progress] src/main/java/org/apache/commons/lang3/ClassUtils.java DONE
+[64854][   progress] src/main/java/org/apache/commons/lang3/math/NumberUtils.java starting
+[64855][   progress] src/main/java/org/apache/commons/lang3/text/StrBuilder.java DONE
+[64855][   progress] src/main/java/org/apache/commons/lang3/builder/EqualsBuilder.java starting
+[64854][   progress] src/main/java/org/apache/commons/lang3/math/NumberUtils.java DONE
+[64854][   progress] src/main/java/org/apache/commons/lang3/event/EventUtils.java starting
+[64854][   progress] src/main/java/org/apache/commons/lang3/event/EventUtils.java DONE
+[64854][   progress] src/main/java/org/apache/commons/lang3/Validate.java starting
+[64855][   progress] src/main/java/org/apache/commons/lang3/builder/EqualsBuilder.java DONE
+[64855][   progress] src/main/java/org/apache/commons/lang3/text/FormattableUtils.java starting
+[64855][   progress] src/main/java/org/apache/commons/lang3/text/FormattableUtils.java DONE
+[64855][   progress] src/main/java/org/apache/commons/lang3/SystemUtils.java starting
+[64854][   progress] src/main/java/org/apache/commons/lang3/Validate.java DONE
+[64854][   progress] src/main/java/org/apache/commons/lang3/text/translate/LookupTranslator.java starting
+[64854][   progress] src/main/java/org/apache/commons/lang3/text/translate/LookupTranslator.java DONE
+[64854][   progress] src/main/java/org/apache/commons/lang3/AnnotationUtils.java starting
+[64855][   progress] src/main/java/org/apache/commons/lang3/SystemUtils.java DONE
+[64855][   progress] src/main/java/org/apache/commons/lang3/mutable/MutableObject.java starting
+[64855][   progress] src/main/java/org/apache/commons/lang3/mutable/MutableObject.java DONE
+[64855][   progress] src/main/java/org/apache/commons/lang3/text/StrTokenizer.java starting
+[64855][   progress] src/main/java/org/apache/commons/lang3/text/StrTokenizer.java DONE
+[64855][   progress] src/main/java/org/apache/commons/lang3/text/WordUtils.java starting
+[64854][   progress] src/main/java/org/apache/commons/lang3/AnnotationUtils.java DONE
+[64854][   progress] src/main/java/org/apache/commons/lang3/CharSet.java starting
+[64854][   progress] src/main/java/org/apache/commons/lang3/CharSet.java DONE
+[64854][   progress] src/main/java/org/apache/commons/lang3/time/FastDateFormat.java starting
+[64855][   progress] src/main/java/org/apache/commons/lang3/text/WordUtils.java DONE
+[64855][   progress] src/main/java/org/apache/commons/lang3/tuple/MutablePair.java starting
+[64855][   progress] src/main/java/org/apache/commons/lang3/tuple/MutablePair.java DONE
+[64855][   progress] src/main/java/org/apache/commons/lang3/exception/ContextedRuntimeException.java starting
+[64855][   progress] src/main/java/org/apache/commons/lang3/exception/ContextedRuntimeException.java DONE
+[64855][   progress] src/main/java/org/apache/commons/lang3/exception/CloneFailedException.java starting
+[64855][   progress] src/main/java/org/apache/commons/lang3/exception/CloneFailedException.java DONE
+[64855][   progress] src/main/java/org/apache/commons/lang3/concurrent/BasicThreadFactory.java starting
+[64857][   progress] src/main/java/org/apache/commons/lang3/reflect/TypeUtils.java DONE
+[64857][   progress] src/main/java/org/apache/commons/lang3/text/translate/UnicodeUnescaper.java starting
+[64854][   progress] src/main/java/org/apache/commons/lang3/time/FastDateFormat.java DONE
+[64854][   progress] src/main/java/org/apache/commons/lang3/builder/CompareToBuilder.java starting
+[64857][   progress] src/main/java/org/apache/commons/lang3/text/translate/UnicodeUnescaper.java DONE
+[64857][   progress] src/main/java/org/apache/commons/lang3/mutable/MutableBoolean.java starting
+[64857][   progress] src/main/java/org/apache/commons/lang3/mutable/MutableBoolean.java DONE
+[64857][   progress] src/main/java/org/apache/commons/lang3/concurrent/ConstantInitializer.java starting
+[64855][   progress] src/main/java/org/apache/commons/lang3/concurrent/BasicThreadFactory.java DONE
+[64855][   progress] src/main/java/org/apache/commons/lang3/concurrent/LazyInitializer.java starting
+[64855][   progress] src/main/java/org/apache/commons/lang3/concurrent/LazyInitializer.java DONE
+[64855][   progress] src/main/java/org/apache/commons/lang3/SerializationUtils.java starting
+[64857][   progress] src/main/java/org/apache/commons/lang3/concurrent/ConstantInitializer.java DONE
+[64857][   progress] src/main/java/org/apache/commons/lang3/tuple/ImmutablePair.java starting
+[64857][   progress] src/main/java/org/apache/commons/lang3/tuple/ImmutablePair.java DONE
+[64857][   progress] src/main/java/org/apache/commons/lang3/time/DurationFormatUtils.java starting
+[64855][   progress] src/main/java/org/apache/commons/lang3/SerializationUtils.java DONE
+[64855][   progress] src/main/java/org/apache/commons/lang3/concurrent/ConcurrentUtils.java starting
+[64855][   progress] src/main/java/org/apache/commons/lang3/concurrent/ConcurrentUtils.java DONE
+[64855][   progress] src/main/java/org/apache/commons/lang3/mutable/MutableInt.java starting
+[64854][   progress] src/main/java/org/apache/commons/lang3/builder/CompareToBuilder.java DONE
+[64854][   progress] src/main/java/org/apache/commons/lang3/mutable/MutableLong.java starting
+[64855][   progress] src/main/java/org/apache/commons/lang3/mutable/MutableInt.java DONE
+[64855][   progress] src/main/java/org/apache/commons/lang3/text/translate/EntityArrays.java starting
+[64854][   progress] src/main/java/org/apache/commons/lang3/mutable/MutableLong.java DONE
+[64857][   progress] src/main/java/org/apache/commons/lang3/time/DurationFormatUtils.java DONE
+[64856][   progress] src/main/java/org/apache/commons/lang3/ArrayUtils.java DONE
+[64855][   progress] src/main/java/org/apache/commons/lang3/text/translate/EntityArrays.java DONE
+[64595][      debug] Backend stats:
+[64595][      debug]   summary_file_try_load= 37187
+[64595][      debug]   summary_read_from_disk= 425
+[64595][      debug]   summary_cache_hits= 37292 (50%)
+[64595][      debug]   summary_cache_misses= 37187
+[64595][      debug]   ondemand_procs_analyzed= 2418
+[64595][      debug]   proc_locker_lock_time_user= 0.00000000
+[64595][      debug]   proc_locker_lock_time_sys= 0.00000000
+[64595][      debug]   proc_locker_lock_time_wall= 0.00000000
+[64595][      debug]   proc_locker_unlock_time_user= 0.00000000
+[64595][      debug]   proc_locker_unlock_time_sys= 0.00000000
+[64595][      debug]   proc_locker_unlock_time_wall= 0.00000000
+[64595][      debug]   restart_scheduler_useful_time_user= 0.00000000
+[64595][      debug]   restart_scheduler_useful_time_sys= 0.00000000
+[64595][      debug]   restart_scheduler_useful_time_wall= 0.00000000
+[64595][      debug]   restart_scheduler_total_time_user= 0.00000000
+[64595][      debug]   restart_scheduler_total_time_sys= 0.00000000
+[64595][      debug]   restart_scheduler_total_time_wall= 0.00000000
+[64595][      debug]   pulse_aliasing_contradictions= 0
+[64595][      debug]   pulse_args_length_contradictions= 0
+[64595][      debug]   pulse_captured_vars_length_contradictions= 0
+[64595][      debug]   pulse_summaries_count= []
+[64595][      debug]   timeouts= 0
+[64595][      debug]   timings= timings for biabduction:
+[64595][      debug]     p10: 0.003798s p20: 0.006783s p30: 0.010956s p40: 0.017160s
+[64595][      debug]     p50: 0.030275s p60: 0.053109s p70: 0.107377s p80: 0.270567s
+[64595][      debug]     p90: 0.797600s p95: 1.346564s p96: 1.495956s p97: 1.650428s
+[64595][      debug]     p98: 1.960856s p99: 2.366970s p99.9: 5.516385s p99.99: 8.026216s 
+[64595][      debug]   timings for fragment-retains-view:
+[64595][      debug]     p10: 0.000000s p20: 0.000001s p30: 0.000002s p40: 0.000002s
+[64595][      debug]     p50: 0.000002s p60: 0.000003s p70: 0.000003s p80: 0.000003s
+[64595][      debug]     p90: 0.000004s p95: 0.000005s p96: 0.000005s p97: 0.000006s
+[64595][      debug]     p98: 0.000006s p99: 0.000008s p99.9: 0.000022s p99.99: 0.000027s 
+[64595][      debug]   timings for inefficient-keyset-iterator:
+[64595][      debug]     p10: 0.000004s p20: 0.000029s p30: 0.000034s p40: 0.000039s
+[64595][      debug]     p50: 0.000046s p60: 0.000057s p70: 0.000071s p80: 0.000091s
+[64595][      debug]     p90: 0.000131s p95: 0.000195s p96: 0.000216s p97: 0.000238s
+[64595][      debug]     p98: 0.000316s p99: 0.000549s p99.9: 0.001854s p99.99: 0.054583s 
+[64595][      debug]   timings for racerd:
+[64595][      debug]     p10: 0.000006s p20: 0.000165s p30: 0.000226s p40: 0.000284s
+[64595][      debug]     p50: 0.000354s p60: 0.000481s p70: 0.000690s p80: 0.001116s
+[64595][      debug]     p90: 0.002046s p95: 0.003383s p96: 0.003769s p97: 0.004411s
+[64595][      debug]     p98: 0.005336s p99: 0.007864s p99.9: 0.019164s p99.99: 0.022002s 
+[64595][      debug]   timings for starvation:
+[64595][      debug]     p10: 0.000067s p20: 0.000185s p30: 0.000255s p40: 0.000316s
+[64595][      debug]     p50: 0.000402s p60: 0.000535s p70: 0.000709s p80: 0.000982s
+[64595][      debug]     p90: 0.001594s p95: 0.002511s p96: 0.002748s p97: 0.003087s
+[64595][      debug]     p98: 0.003849s p99: 0.004913s p99.9: 0.016264s p99.99: 0.020993s 
+[64595][      debug]   timings for preanalysis:
+[64595][      debug]     p10: 0.000447s p20: 0.000587s p30: 0.000701s p40: 0.000818s
+[64595][      debug]     p50: 0.000991s p60: 0.001190s p70: 0.001485s p80: 0.002017s
+[64595][      debug]     p90: 0.003121s p95: 0.004472s p96: 0.005040s p97: 0.005962s
+[64595][      debug]     p98: 0.007170s p99: 0.010832s p99.9: 0.021946s p99.99: 0.122713s 
+[64595][      debug]   
+[64595][      debug]   longest_proc_duration_heap= [
+[64595][      debug]   36621ms: Type TypeUtils.getClosestParentType(Class,Class)
+[64595][      debug]   31372ms: ToStringBuilder ToStringBuilder.append(String,Object,boolean)
+[64595][      debug]   31163ms: boolean TypeUtils.isAssignable(Type,Type)
+[64595][      debug]   27916ms: boolean TypeUtils.isAssignable(Type,Type,Map)
+[64595][      debug]   25919ms: boolean TypeUtils.isAssignable(Type,ParameterizedType,Map)
+[64595][      debug]   20731ms: void ToStringStyle.append(StringBuffer,String,Object,Boolean)
+[64595][      debug]   17782ms: boolean TypeUtils.isAssignable(Type,WildcardType,Map)
+[64595][      debug]   15072ms: boolean TypeUtils.isAssignable(TypeVariable,Type,Map)
+[64595][      debug]   13741ms: int Pair.compareTo(Object)
+[64595][      debug]   13723ms: int Pair.compareTo(Pair)
+[64595][      debug]   ]
+[64595][      debug]   
+[64595][      debug] GC stats for backend_stats.gc_stats_add.:
+[64595][      debug]   minor_words: 6.83438e+10
+[64595][      debug]   promoted_words: 2.76813e+08
+[64595][      debug]   major_words: 3.33111e+08
+[64595][      debug]   minor_collections: 65403
+[64595][      debug]   major_collections: 451
+[64595][      debug]   compactions: 0
+[64595][      debug]   top_heap_words: 18750976
+[64595][      debug]   
+[64595][      debug] GC stats for backend_stats.gc_stats_max.:
+[64595][      debug]   minor_words: 1.85898e+10
+[64595][      debug]   promoted_words: 9.31697e+07
+[64595][      debug]   major_words: 1.05363e+08
+[64595][      debug]   minor_collections: 17791
+[64595][      debug]   major_collections: 124
+[64595][      debug]   compactions: 0
+[64595][      debug]   top_heap_words: 7940096
+[64595][      debug]   
+[64595][      debug] Average over 4 processes
+[64595][      debug] GC stats for backend_stats.gc_stats_average.:
+[64595][      debug]   minor_words: 1.70859e+10
+[64595][      debug]   promoted_words: 6.92032e+07
+[64595][      debug]   major_words: 8.32778e+07
+[64595][      debug]   minor_collections: 16350
+[64595][      debug]   major_collections: 112
+[64595][      debug]   compactions: 0
+[64595][      debug]   top_heap_words: 4687744
+[64595][      debug]   
+[64595][      debug] Analysis phase finished in 2min55s
+[64595][      debug] backend_stats.scheduler_process_analysis_time_user= 4.65620000
+[64595][      debug] backend_stats.scheduler_process_analysis_time_sys= 1.85585600
+[64595][      debug] backend_stats.scheduler_process_analysis_time_wall= 175.02112560
+[64595][      debug] GC stats for analysis_scheduler:
+[64595][      debug]   minor_words: 1.82656e+08
+[64595][      debug]   promoted_words: 381806
+[64595][      debug]   major_words: 419082
+[64595][      debug]   minor_collections: 176
+[64595][      debug]   major_collections: 5
+[64595][      debug]   compactions: 1
+[64595][      debug]   top_heap_words: 1331712
+[64595][      debug]   
+[64595][     result] 
+src/main/java/org/apache/commons/lang3/AnnotationUtils.java:74: error: Null Dereference
+  object returned by `getAllInterfaces(cls)` could be null and is dereferenced at line 74.
+  72.           protected String getShortClassName(java.lang.Class<?> cls) {
+  73.               Class<? extends Annotation> annotationType = null;
+  74. >             for (Class<?> iface : ClassUtils.getAllInterfaces(cls)) {
+  75.                   if (Annotation.class.isAssignableFrom(iface)) {
+  76.                       @SuppressWarnings("unchecked")
+
+src/main/java/org/apache/commons/lang3/CharSetUtils.java:194: error: Null Dereference
+  object `chars` last assigned on line 189 could be null and is dereferenced at line 194.
+  192.           int sz = chrs.length;
+  193.           for(int i=0; i<sz; i++) {
+  194. >             if(chars.contains(chrs[i]) == expect) {
+  195.                   buffer.append(chrs[i]);
+  196.               }
+
+src/main/java/org/apache/commons/lang3/builder/ToStringBuilder.java:226: error: Null Dereference
+  object `null` is dereferenced by call to `ToStringBuilder(...)` at line 226.
+  224.        */
+  225.       public ToStringBuilder(Object object) {
+  226. >         this(object, null, null);
+  227.       }
+  228.   
+
+src/main/java/org/apache/commons/lang3/concurrent/MultiBackgroundInitializer.java:167: warning: Thread Safety Violation
+  Read/Write race. Non-private method `MultiBackgroundInitializer.getTaskCount()` reads without synchronization from container `this.childInitializers` via call to `Map.values()`. Potentially races with write in method `MultiBackgroundInitializer.addInitializer(...)`.
+ Reporting because another access to the same memory occurs on a background thread, although this access may not.
+  165.           int result = 1;
+  166.   
+  167. >         for (BackgroundInitializer<?> bi : childInitializers.values()) {
+  168.               result += bi.getTaskCount();
+  169.           }
+
+src/main/java/org/apache/commons/lang3/math/NumberUtils.java:518: error: Null Dereference
+  object `f` last assigned on line 517 could be null and is dereferenced at line 518.
+  516.                       try {
+  517.                           Float f = NumberUtils.createFloat(numeric);
+  518. >                         if (!(f.isInfinite() || (f.floatValue() == 0.0F && !allZeros))) {
+  519.                               //If it's too big for a float or the float value = 0 and the string
+  520.                               //has non-zeros in it, then float does not have the precision we want
+
+
+Found 6 issues (console output truncated to 5, see '/home/andre/Scrivania/Università/Magistrale/Ingegneria-dei-Sistemi-Distribuiti/Progetto-ISD/infer-out/report.txt' for the full list)
+                        Issue Type(ISSUED_TYPE_ID): #
+                Null Dereference(NULL_DEREFERENCE): 5
+  Thread Safety Violation(THREAD_SAFETY_VIOLATION): 1
+
+[64595][      debug] GC stats for report:
+[64595][      debug]   minor_words: 740538
+[64595][      debug]   promoted_words: 6229
+[64595][      debug]   major_words: 30689
+[64595][      debug]   minor_collections: 1
+[64595][      debug]   major_collections: 0
+[64595][      debug]   compactions: 0
+[64595][      debug]   top_heap_words: 1331712
+[64595][      debug]   
+[64595][      debug] GC stats for main_process_full:
+[64595][      debug]   minor_words: 1.86388e+08
+[64595][      debug]   promoted_words: 837480
+[64595][      debug]   major_words: 1.51444e+06
+[64595][      debug]   minor_collections: 185
+[64595][      debug]   major_collections: 6
+[64595][      debug]   compactions: 1
+[64595][      debug]   top_heap_words: 1331712
+[64595][      debug]   
+[64598][      debug] Detected 0 spec overwrittes.
+[64598][      debug] Sqlite write daemon: terminating
