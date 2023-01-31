@@ -22,6 +22,8 @@ import java.math.BigDecimal;
 import java.math.BigInteger;
 
 import junit.framework.TestCase;
+import org.junit.Test;
+import static org.junit.Assert.fail;
 
 import static org.apache.commons.lang3.JavaVersion.*;
 import org.apache.commons.lang3.SystemUtils;
@@ -32,6 +34,32 @@ import org.apache.commons.lang3.SystemUtils;
  * @version $Id$
  */
 public class NumberUtilsTest extends TestCase {
+
+    @Test
+    public void testForNullPointerDereference_4()
+    {
+        Float f = null;
+        try{
+            f.isInfinite();
+            f.floatValue();
+        }
+        catch(NullPointerException e){
+            fail("Null Pointer Exception 4");
+        }
+    }
+
+    @Test
+    public void testForNullPointerDereference_5()
+    {
+        Double d = null;
+        try{
+            d.isInfinite();
+            d.floatValue();
+        }
+        catch(NullPointerException e){
+            fail("Null Pointer Exception 5");
+        }
+    }
 
     public NumberUtilsTest(String name) {
         super(name);
