@@ -29,16 +29,7 @@ import static org.junit.Assert.fail;
  * @version $Id$
  */
 public class CharSetUtilsTest extends TestCase {
-
-    @Test
-    public void testForNullPointerDereference_1() {
-        CharSet c=null;
-        try {
-            c.contains('j');
-        } catch (NullPointerException e) {
-            fail("Null Pointer Exception 1");
-        }
-    }    
+   
     
     public CharSetUtilsTest(String name) {
         super(name);

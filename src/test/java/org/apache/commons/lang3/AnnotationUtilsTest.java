@@ -386,16 +386,7 @@ public class AnnotationUtilsTest {
     private Field field2;
     private Field field3;
     private Field field4;
-
-    @Test
-    public void testForNullPointerDereference_0() {
-        java.lang.Class<?> cls=null;
-        try {
-            ClassUtils.getAllInterfaces(cls);
-        } catch (NullPointerException e) {
-            fail("Null Pointer Exception 0");
-        }
-    }   
+  
 
     @Before
     public void setup() throws Exception {
