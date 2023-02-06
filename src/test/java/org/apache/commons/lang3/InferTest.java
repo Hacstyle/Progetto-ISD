@@ -15,9 +15,10 @@ public class InferTest {
     @Test
     public void testForNullPointerDereference_0() {
 
+        java.lang.Class<?> cls=null;
+
         try{
 
-            java.lang.Class<?> cls=null;
             Class<? extends Annotation> annotationType = null;
             for (Class<?> iface : ClassUtils.getAllInterfaces(cls)) {
                 if (Annotation.class.isAssignableFrom(iface)) {
@@ -37,27 +38,31 @@ public class InferTest {
         }
 
     }
-    
+
+
     @Test
-    public void testForNullPointerDereference_1() {
-        String str = "a"; String set = null; Boolean expect=true;
-        try {
+    public void testForNullPointerDereference_1()
+    {
+        String str = "a"; String[] set = null; Boolean expect=true;
+        try
+        {
+           String c = CharSetUtils.keep(str, set);
+        }
+        catch(NullPointerException e)
+        {
+            fail("Null Pointer Exception 1:keep");
+        }
 
-            CharSet chars = CharSet.getInstance(set);
-            StringBuilder buffer = new StringBuilder(str.length());
-            char[] chrs = str.toCharArray();
-            int sz = chrs.length;
-            for(int i=0; i<sz; i++) {
-                if(chars.contains(chrs[i]) == expect) {
-                    buffer.append(chrs[i]);
-                }
-            }
-            String b = buffer.toString();
-        } catch (NullPointerException e) {
-
-            fail("Null Pointer Exception 1");
+        try
+        {
+           String c = CharSetUtils.delete(str, set);
+        }
+        catch(NullPointerException e)
+        {
+            fail("Null Pointer Exception 1:delete");
         }
     }
+    
 
     @Test
     public void testForNullPointerDereference_2()
@@ -75,21 +80,11 @@ public class InferTest {
     @Test
     public void testForNullPointerDereference_4()
     {
-        String numeric = null; 
-        boolean allZeros = true;
+        String str = "F"; 
+        
         try{
 
-            try {
-                Float f = NumberUtils.createFloat(numeric);
-                if (!(f.isInfinite() || (f.floatValue() == 0.0F && !allZeros))) {
-                    //If it's too big for a float or the float value = 0 and the string
-                    //has non-zeros in it, then float does not have the precision we want
-                    return;
-                }
-
-            } catch (NumberFormatException nfe) { // NOPMD
-                // ignore the bad number
-            }
+           Number f=NumberUtils.createNumber(str);
 
         }
         catch(NullPointerException e){
@@ -97,23 +92,17 @@ public class InferTest {
             fail("Null Pointer Exception 4");
 
         }
-    } 
+    }
+
 
     @Test
     public void testForNullPointerDereference_5()
     {
-        String numeric = null; 
-        boolean allZeros = true;
+        String str = "D"; 
+        
         try{
 
-            try {
-                Double d = NumberUtils.createDouble(numeric);
-                if (!(d.isInfinite() || (d.floatValue() == 0.0D && !allZeros))) {
-                    return;
-                }
-            } catch (NumberFormatException nfe) { // NOPMD
-                // ignore the bad number
-            }
+           Number f=NumberUtils.createNumber(str);
 
         }
         catch(NullPointerException e){
