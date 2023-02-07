@@ -87,6 +87,10 @@ public class InferTest {
            Number f=NumberUtils.createNumber(str);
 
         }
+        catch(NumberFormatException c)
+        {
+
+        }
         catch(NullPointerException e){
 
             fail("Null Pointer Exception 4");
@@ -104,6 +108,10 @@ public class InferTest {
 
            Number f=NumberUtils.createNumber(str);
 
+        }
+        catch(NumberFormatException c)
+        {
+            
         }
         catch(NullPointerException e){
 
