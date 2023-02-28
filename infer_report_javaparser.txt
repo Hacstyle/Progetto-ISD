@@ -1,0 +1,357 @@
+#0
+javaparser-core-generators/src/main/java/com/github/javaparser/generator/core/other/TokenKindGenerator.java:89: error: Null Dereference
+  object returned by `getArguments(enumEntry)` could be null and is dereferenced at line 89.
+  87.       private void generateEnumEntry(EnumDeclaration kindEnum, String name, IntegerLiteralExpr kind) {
+  88.           final EnumConstantDeclaration enumEntry = new EnumConstantDeclaration(name);
+  89. >         enumEntry.getArguments().add(kind);
+  90.           kindEnum.addEntry(enumEntry);
+  91.       }
+
+#1
+javaparser-core-serialization/src/main/java/com/github/javaparser/serialization/JavaParserJsonDeserializer.java:89: warning: Inefficient Keyset Iterator
+  Accessing a value using a key that was retrieved from a `keySet` iterator. It is more efficient to use an iterator on the `entrySet` of the map, avoiding the extra `HashMap.get(key)` lookup.
+  87.                           .findFirst();
+  88.                   if (!optionalPropertyMetaModel.isPresent()) {
+  89. >                     deferredJsonValues.put(name, nodeJson.get(name));
+  90.                       continue;
+  91.                   }
+
+#2
+javaparser-core-serialization/src/main/java/com/github/javaparser/serialization/JavaParserJsonDeserializer.java:121: warning: Inefficient Keyset Iterator
+  Accessing a value using a key that was retrieved from a `keySet` iterator. It is more efficient to use an iterator on the `entrySet` of the map, avoiding the extra `HashMap.get(key)` lookup.
+  119.   
+  120.               for (String name : deferredJsonValues.keySet()) {
+  121. >                 if (!readNonMetaProperties(name, deferredJsonValues.get(name), node)) {
+  122.                       throw new IllegalStateException("Unknown propertyKey: " + nodeMetaModel.getQualifiedClassName() + "." + name);
+  123.                   }
+
+#3
+javaparser-core/src/main/java/com/github/javaparser/Providers.java:62: error: Resource Leak
+  resource of type `java.io.FileInputStream` acquired by call to `FileInputStream(...)` at line 62 is not released after line 62.
+**Note**: potential exception at line 62
+  60.   
+  61.       public static Provider provider(File file, Charset encoding) throws FileNotFoundException {
+  62. >         return provider(new FileInputStream(assertNotNull(file)), assertNotNull(encoding));
+  63.       }
+  64.   
+
+#4
+javaparser-core/src/main/java/com/github/javaparser/ast/expr/CharLiteralExpr.java:99: error: Null Dereference
+  object returned by `unescapeJava(LiteralStringValueExpr.value)` could be null and is dereferenced at line 99.
+   97.        */
+   98.       public char asChar() {
+   99. >         return StringEscapeUtils.unescapeJava(value).charAt(0);
+  100.       }
+  101.   
+
+#5
+javaparser-core/src/main/java/com/github/javaparser/ast/visitor/CloneVisitor.java:63: error: Null Dereference
+  object `annotations` last assigned on line 60 could be null and is dereferenced by call to `PackageDeclaration(...)` at line 63.
+  61.           Name name = cloneNode(n.getName(), arg);
+  62.           Comment comment = cloneNode(n.getComment(), arg);
+  63. >         PackageDeclaration r = new PackageDeclaration(n.getTokenRange().orElse(null), annotations, name);
+  64.           r.setComment(comment);
+  65.           n.getOrphanComments().stream().map(Comment::clone).forEach(r::addOrphanComment);
+
+#6
+javaparser-core/src/main/java/com/github/javaparser/ast/visitor/CloneVisitor.java:297: error: Null Dereference
+  object `annotations` last assigned on line 295 could be null and is dereferenced by call to `PrimitiveType(...)` at line 297.
+  295.           NodeList<AnnotationExpr> annotations = cloneList(n.getAnnotations(), arg);
+  296.           Comment comment = cloneNode(n.getComment(), arg);
+  297. >         PrimitiveType r = new PrimitiveType(n.getTokenRange().orElse(null), n.getType(), annotations);
+  298.           r.setComment(comment);
+  299.           n.getOrphanComments().stream().map(Comment::clone).forEach(r::addOrphanComment);
+
+#7
+javaparser-core/src/main/java/com/github/javaparser/ast/visitor/CloneVisitor.java:309: error: Null Dereference
+  object `annotations` last assigned on line 307 could be null and is dereferenced by call to `ArrayType(...)` at line 309.
+  307.           NodeList<AnnotationExpr> annotations = cloneList(n.getAnnotations(), arg);
+  308.           Comment comment = cloneNode(n.getComment(), arg);
+  309. >         ArrayType r = new ArrayType(n.getTokenRange().orElse(null), componentType, n.getOrigin(), annotations);
+  310.           r.setComment(comment);
+  311.           n.getOrphanComments().stream().map(Comment::clone).forEach(r::addOrphanComment);
+
+#8
+javaparser-core/src/main/java/com/github/javaparser/ast/visitor/CloneVisitor.java:321: error: Null Dereference
+  object `annotations` last assigned on line 318 could be null and is dereferenced by call to `ArrayCreationLevel(...)` at line 321.
+  319.           Expression dimension = cloneNode(n.getDimension(), arg);
+  320.           Comment comment = cloneNode(n.getComment(), arg);
+  321. >         ArrayCreationLevel r = new ArrayCreationLevel(n.getTokenRange().orElse(null), dimension, annotations);
+  322.           r.setComment(comment);
+  323.           n.getOrphanComments().stream().map(Comment::clone).forEach(r::addOrphanComment);
+
+#9
+javaparser-core/src/main/java/com/github/javaparser/ast/visitor/CloneVisitor.java:333: error: Null Dereference
+  object `elements` last assigned on line 330 could be null and is dereferenced by call to `IntersectionType(...)` at line 333.
+  331.           NodeList<AnnotationExpr> annotations = cloneList(n.getAnnotations(), arg);
+  332.           Comment comment = cloneNode(n.getComment(), arg);
+  333. >         IntersectionType r = new IntersectionType(n.getTokenRange().orElse(null), elements);
+  334.           r.setComment(comment);
+  335.           n.getOrphanComments().stream().map(Comment::clone).forEach(r::addOrphanComment);
+
+#10
+javaparser-core/src/main/java/com/github/javaparser/ast/visitor/CloneVisitor.java:345: error: Null Dereference
+  object `elements` last assigned on line 342 could be null and is dereferenced by call to `UnionType(...)` at line 345.
+  343.           NodeList<AnnotationExpr> annotations = cloneList(n.getAnnotations(), arg);
+  344.           Comment comment = cloneNode(n.getComment(), arg);
+  345. >         UnionType r = new UnionType(n.getTokenRange().orElse(null), elements);
+  346.           r.setComment(comment);
+  347.           n.getOrphanComments().stream().map(Comment::clone).forEach(r::addOrphanComment);
+
+#11
+javaparser-core/src/main/java/com/github/javaparser/ast/visitor/CloneVisitor.java:416: error: Null Dereference
+  object `values` last assigned on line 414 could be null and is dereferenced by call to `ArrayInitializerExpr(...)` at line 416.
+  414.           NodeList<Expression> values = cloneList(n.getValues(), arg);
+  415.           Comment comment = cloneNode(n.getComment(), arg);
+  416. >         ArrayInitializerExpr r = new ArrayInitializerExpr(n.getTokenRange().orElse(null), values);
+  417.           r.setComment(comment);
+  418.           n.getOrphanComments().stream().map(Comment::clone).forEach(r::addOrphanComment);
+
+#12
+javaparser-core/src/main/java/com/github/javaparser/ast/visitor/CloneVisitor.java:513: error: Null Dereference
+  object `pattern` last assigned on line 510 could be null and is dereferenced by call to `InstanceOfExpr(...)` at line 513.
+  511.           ReferenceType type = cloneNode(n.getType(), arg);
+  512.           Comment comment = cloneNode(n.getComment(), arg);
+  513. >         InstanceOfExpr r = new InstanceOfExpr(n.getTokenRange().orElse(null), expression, type, pattern);
+  514.           r.setComment(comment);
+  515.           n.getOrphanComments().stream().map(Comment::clone).forEach(r::addOrphanComment);
+
+#13
+javaparser-core/src/main/java/com/github/javaparser/ast/visitor/CloneVisitor.java:725: error: Null Dereference
+  object `pairs` last assigned on line 722 could be null and is dereferenced by call to `NormalAnnotationExpr(...)` at line 725.
+  723.           Name name = cloneNode(n.getName(), arg);
+  724.           Comment comment = cloneNode(n.getComment(), arg);
+  725. >         NormalAnnotationExpr r = new NormalAnnotationExpr(n.getTokenRange().orElse(null), name, pairs);
+  726.           r.setComment(comment);
+  727.           n.getOrphanComments().stream().map(Comment::clone).forEach(r::addOrphanComment);
+
+#14
+javaparser-core/src/main/java/com/github/javaparser/ast/visitor/CloneVisitor.java:761: error: Null Dereference
+  object `classDeclaration` last assigned on line 759 could be null and is dereferenced by call to `LocalClassDeclarationStmt(...)` at line 761.
+  759.           ClassOrInterfaceDeclaration classDeclaration = cloneNode(n.getClassDeclaration(), arg);
+  760.           Comment comment = cloneNode(n.getComment(), arg);
+  761. >         LocalClassDeclarationStmt r = new LocalClassDeclarationStmt(n.getTokenRange().orElse(null), classDeclaration);
+  762.           r.setComment(comment);
+  763.           n.getOrphanComments().stream().map(Comment::clone).forEach(r::addOrphanComment);
+
+#15
+javaparser-core/src/main/java/com/github/javaparser/ast/visitor/CloneVisitor.java:772: error: Null Dereference
+  object `recordDeclaration` last assigned on line 770 could be null and is dereferenced by call to `LocalRecordDeclarationStmt(...)` at line 772.
+  770.           RecordDeclaration recordDeclaration = cloneNode(n.getRecordDeclaration(), arg);
+  771.           Comment comment = cloneNode(n.getComment(), arg);
+  772. >         LocalRecordDeclarationStmt r = new LocalRecordDeclarationStmt(n.getTokenRange().orElse(null), recordDeclaration);
+  773.           r.setComment(comment);
+  774.           n.getOrphanComments().stream().map(Comment::clone).forEach(r::addOrphanComment);
+
+#16
+javaparser-core/src/main/java/com/github/javaparser/ast/visitor/CloneVisitor.java:795: error: Null Dereference
+  object `statements` last assigned on line 793 could be null and is dereferenced by call to `BlockStmt(...)` at line 795.
+  793.           NodeList<Statement> statements = cloneList(n.getStatements(), arg);
+  794.           Comment comment = cloneNode(n.getComment(), arg);
+  795. >         BlockStmt r = new BlockStmt(n.getTokenRange().orElse(null), statements);
+  796.           r.setComment(comment);
+  797.           n.getOrphanComments().stream().map(Comment::clone).forEach(r::addOrphanComment);
+
+#17
+javaparser-core/src/main/java/com/github/javaparser/ast/visitor/CloneVisitor.java:840: error: Null Dereference
+  object `entries` last assigned on line 837 could be null and is dereferenced by call to `SwitchStmt(...)` at line 840.
+  838.           Expression selector = cloneNode(n.getSelector(), arg);
+  839.           Comment comment = cloneNode(n.getComment(), arg);
+  840. >         SwitchStmt r = new SwitchStmt(n.getTokenRange().orElse(null), selector, entries);
+  841.           r.setComment(comment);
+  842.           n.getOrphanComments().stream().map(Comment::clone).forEach(r::addOrphanComment);
+
+#18
+javaparser-core/src/main/java/com/github/javaparser/ast/visitor/CloneVisitor.java:935: error: Null Dereference
+  object `variable` last assigned on line 933 could be null and is dereferenced by call to `ForEachStmt(...)` at line 935.
+  933.           VariableDeclarationExpr variable = cloneNode(n.getVariable(), arg);
+  934.           Comment comment = cloneNode(n.getComment(), arg);
+  935. >         ForEachStmt r = new ForEachStmt(n.getTokenRange().orElse(null), variable, iterable, body);
+  936.           r.setComment(comment);
+  937.           n.getOrphanComments().stream().map(Comment::clone).forEach(r::addOrphanComment);
+
+#19
+javaparser-core/src/main/java/com/github/javaparser/ast/visitor/CloneVisitor.java:998: error: Null Dereference
+  object `parameter` last assigned on line 996 could be null and is dereferenced by call to `CatchClause(...)` at line 998.
+   996.           Parameter parameter = cloneNode(n.getParameter(), arg);
+   997.           Comment comment = cloneNode(n.getComment(), arg);
+   998. >         CatchClause r = new CatchClause(n.getTokenRange().orElse(null), parameter, body);
+   999.           r.setComment(comment);
+  1000.           n.getOrphanComments().stream().map(Comment::clone).forEach(r::addOrphanComment);
+
+#20
+javaparser-core/src/main/java/com/github/javaparser/ast/visitor/CloneVisitor.java:1010: error: Null Dereference
+  object `parameters` last assigned on line 1008 could be null and is dereferenced by call to `LambdaExpr(...)` at line 1010.
+  1008.           NodeList<Parameter> parameters = cloneList(n.getParameters(), arg);
+  1009.           Comment comment = cloneNode(n.getComment(), arg);
+  1010. >         LambdaExpr r = new LambdaExpr(n.getTokenRange().orElse(null), parameters, body, n.isEnclosingParameters());
+  1011.           r.setComment(comment);
+  1012.           n.getOrphanComments().stream().map(Comment::clone).forEach(r::addOrphanComment);
+
+#21
+javaparser-core/src/main/java/com/github/javaparser/ast/visitor/CloneVisitor.java:1056: error: Null Dereference
+  object `name` last assigned on line 1054 could be null and is dereferenced by call to `ImportDeclaration(...)` at line 1056.
+  1054.           Name name = cloneNode(n.getName(), arg);
+  1055.           Comment comment = cloneNode(n.getComment(), arg);
+  1056. >         ImportDeclaration r = new ImportDeclaration(n.getTokenRange().orElse(null), name, n.isStatic(), n.isAsterisk());
+  1057.           r.setComment(comment);
+  1058.           n.getOrphanComments().stream().map(Comment::clone).forEach(r::addOrphanComment);
+
+#22
+javaparser-core/src/main/java/com/github/javaparser/ast/visitor/CloneVisitor.java:1081: error: Null Dereference
+  object `modifiers` last assigned on line 1078 could be null and is dereferenced by call to `ModuleRequiresDirective(...)` at line 1081.
+  1079.           Name name = cloneNode(n.getName(), arg);
+  1080.           Comment comment = cloneNode(n.getComment(), arg);
+  1081. >         ModuleRequiresDirective r = new ModuleRequiresDirective(n.getTokenRange().orElse(null), modifiers, name);
+  1082.           r.setComment(comment);
+  1083.           n.getOrphanComments().stream().map(Comment::clone).forEach(r::addOrphanComment);
+
+#23
+javaparser-core/src/main/java/com/github/javaparser/ast/visitor/CloneVisitor.java:1124: error: Null Dereference
+  object `moduleNames` last assigned on line 1121 could be null and is dereferenced by call to `ModuleExportsDirective(...)` at line 1124.
+  1122.           Name name = cloneNode(n.getName(), arg);
+  1123.           Comment comment = cloneNode(n.getComment(), arg);
+  1124. >         ModuleExportsDirective r = new ModuleExportsDirective(n.getTokenRange().orElse(null), name, moduleNames);
+  1125.           r.setComment(comment);
+  1126.           n.getOrphanComments().stream().map(Comment::clone).forEach(r::addOrphanComment);
+
+#24
+javaparser-core/src/main/java/com/github/javaparser/ast/visitor/CloneVisitor.java:1136: error: Null Dereference
+  object `with` last assigned on line 1134 could be null and is dereferenced by call to `ModuleProvidesDirective(...)` at line 1136.
+  1134.           NodeList<Name> with = cloneList(n.getWith(), arg);
+  1135.           Comment comment = cloneNode(n.getComment(), arg);
+  1136. >         ModuleProvidesDirective r = new ModuleProvidesDirective(n.getTokenRange().orElse(null), name, with);
+  1137.           r.setComment(comment);
+  1138.           n.getOrphanComments().stream().map(Comment::clone).forEach(r::addOrphanComment);
+
+#25
+javaparser-core/src/main/java/com/github/javaparser/ast/visitor/CloneVisitor.java:1159: error: Null Dereference
+  object `moduleNames` last assigned on line 1156 could be null and is dereferenced by call to `ModuleOpensDirective(...)` at line 1159.
+  1157.           Name name = cloneNode(n.getName(), arg);
+  1158.           Comment comment = cloneNode(n.getComment(), arg);
+  1159. >         ModuleOpensDirective r = new ModuleOpensDirective(n.getTokenRange().orElse(null), name, moduleNames);
+  1160.           r.setComment(comment);
+  1161.           n.getOrphanComments().stream().map(Comment::clone).forEach(r::addOrphanComment);
+
+#26
+javaparser-core/src/main/java/com/github/javaparser/ast/visitor/CloneVisitor.java:1182: error: Null Dereference
+  object `annotations` last assigned on line 1178 could be null and is dereferenced by call to `ReceiverParameter(...)` at line 1182.
+  1180.           Type type = cloneNode(n.getType(), arg);
+  1181.           Comment comment = cloneNode(n.getComment(), arg);
+  1182. >         ReceiverParameter r = new ReceiverParameter(n.getTokenRange().orElse(null), annotations, type, name);
+  1183.           r.setComment(comment);
+  1184.           n.getOrphanComments().stream().map(Comment::clone).forEach(r::addOrphanComment);
+
+#27
+javaparser-core/src/main/java/com/github/javaparser/ast/visitor/CloneVisitor.java:1215: error: Null Dereference
+  object `entries` last assigned on line 1212 could be null and is dereferenced by call to `SwitchExpr(...)` at line 1215.
+  1213.           Expression selector = cloneNode(n.getSelector(), arg);
+  1214.           Comment comment = cloneNode(n.getComment(), arg);
+  1215. >         SwitchExpr r = new SwitchExpr(n.getTokenRange().orElse(null), selector, entries);
+  1216.           r.setComment(comment);
+  1217.           n.getOrphanComments().stream().map(Comment::clone).forEach(r::addOrphanComment);
+
+#28
+javaparser-core/src/main/java/com/github/javaparser/printer/lexicalpreservation/RemovedGroup.java:215: error: Null Dereference
+  object `firstElement` last assigned on line 205 could be null and is dereferenced at line 215.
+  213.               break;
+  214.           }
+  215. >         if (firstElement.isChild()) {
+  216.               LexicalDifferenceCalculator.CsmChild csmChild = (LexicalDifferenceCalculator.CsmChild) firstElement.getElement();
+  217.               Node child = csmChild.getChild();
+
+#29
+javaparser-core/src/main/java/com/github/javaparser/utils/LineSeparator.java:50: error: Null Dereference
+  object returned by `getProperty("line.separator")` could be null and is dereferenced at line 50.
+  48.        * This line ending is set to whatever the host system's line separator is
+  49.        */
+  50. >     SYSTEM(System.getProperty("line.separator"), "SYSTEM : (" + System.getProperty("line.separator").replace("\r", "\\r").replace("\n", "\\n") + ")"),
+  51.       /**
+  52.        * The ARBITRARY line ending can be used where we do not care about the line separator,
+
+#30
+javaparser-core/target/generated-sources/javacc/com/github/javaparser/GeneratedJavaParser.java:2281: error: Null Dereference
+  object `ret` last assigned on line 2278 could be null and is dereferenced by call to `add(...)` at line 2281.
+  2279.       Parameter par;
+  2280.       par = Parameter();
+  2281. > ret = add(ret, par);
+  2282.       label_20:
+  2283.       while (true) {
+
+#31
+javaparser-core/target/generated-sources/javacc/com/github/javaparser/GeneratedJavaParser.java:2334: error: Null Dereference
+  object `ret` last assigned on line 2331 could be null and is dereferenced by call to `add(...)` at line 2334.
+  2332.       Pair<SimpleName, List<ArrayBracketPair>> id;
+  2333.       id = VariableDeclaratorId();
+  2334. > ret = add(ret, new Parameter(range(id.a, id.a), new NodeList<Modifier>(), emptyNodeList(), new UnknownType(), false, emptyNodeList(), id.a));
+  2335.       label_21:
+  2336.       while (true) {
+
+#32
+javaparser-symbol-solver-core/src/main/java/com/github/javaparser/symbolsolver/javaparsermodel/FailureHandler.java:48: error: Null Dereference
+  object returned by `findRootCause(th)` could be null and is dereferenced at line 48.
+  46.       public RuntimeException handle(Throwable th, String message) {
+  47.           // searching for exact mapping
+  48. >         Function<Throwable, ? extends RuntimeException> converter = FAILURE_CONVERTER.get(findRootCause(th).getClass());
+  49.           if (converter != null) {
+  50.               return converter.apply(th);
+
+#33
+javaparser-symbol-solver-core/src/main/java/com/github/javaparser/symbolsolver/javaparsermodel/contexts/CompilationUnitContext.java:228: error: Null Dereference
+  object returned by `AbstractJavaParserContext.typeSolver.tryToSolveType(name)` could be null and is dereferenced by call to `adapt(...)` at line 228.
+  226.           // DO NOT look for absolute name if this name is not qualified: you cannot import classes from the default package
+  227.           if (isQualifiedName(name)) {
+  228. >             return SymbolReference.adapt(typeSolver.tryToSolveType(name), ResolvedTypeDeclaration.class);
+  229.           } else {
+  230.               return SymbolReference.unsolved();
+
+#34
+javaparser-symbol-solver-core/src/main/java/com/github/javaparser/symbolsolver/javaparsermodel/contexts/MethodCallExprContext.java:399: warning: Inefficient Keyset Iterator
+  Accessing a value using a key that was retrieved from a `keySet` iterator. It is more efficient to use an iterator on the `entrySet` of the map, avoiding the extra `HashMap.get(key)` lookup.
+  397.   			Map<ResolvedTypeParameterDeclaration, ResolvedType> matchedTypeParameters) {
+  398.   		for (ResolvedTypeParameterDeclaration tp : matchedTypeParameters.keySet()) {
+  399. >             methodUsage = methodUsage.replaceTypeParameter(tp, matchedTypeParameters.get(tp));
+  400.           }
+  401.   		return methodUsage;
+
+#35
+javaparser-symbol-solver-core/src/main/java/com/github/javaparser/symbolsolver/javaparsermodel/contexts/MethodCallExprContext.java:523: warning: Inefficient Keyset Iterator
+  Accessing a value using a key that was retrieved from a `keySet` iterator. It is more efficient to use an iterator on the `entrySet` of the map, avoiding the extra `HashMap.get(key)` lookup.
+  521.       private ResolvedType applyInferredTypes(ResolvedType type, Map<ResolvedTypeParameterDeclaration, ResolvedType> inferredTypes) {
+  522.           for (ResolvedTypeParameterDeclaration tp : inferredTypes.keySet()) {
+  523. >             type = type.replaceTypeVariables(tp, inferredTypes.get(tp), inferredTypes);
+  524.           }
+  525.           return type;
+
+#36
+javaparser-symbol-solver-core/src/main/java/com/github/javaparser/symbolsolver/resolution/typeinference/ControlFlowLogic.java:243: error: Null Dereference
+  object returned by `statement.accept(visitor,null)` could be null and is dereferenced at line 243.
+  241.               }
+  242.           };
+  243. >         return statement.accept(visitor, null);
+  244.   
+  245.           //
+
+#37
+javaparser-symbol-solver-core/src/main/java/com/github/javaparser/symbolsolver/resolution/typesolvers/AarTypeSolver.java:56: error: Resource Leak
+  resource of type `java.util.jar.JarFile` acquired by call to `JarFile(...)` at line 53 is not released after line 56.
+  54.           ZipEntry classesJarEntry = jarFile.getEntry("classes.jar");
+  55.           if (classesJarEntry == null) {
+  56. >             throw new IllegalArgumentException(String.format("The given file (%s) is malformed: entry classes.jar was not found", aarFile.getAbsolutePath()));
+  57.           }
+  58.           delegate = new JarTypeSolver(jarFile.getInputStream(classesJarEntry));
+
+#38
+javaparser-symbol-solver-core/src/main/java/com/github/javaparser/symbolsolver/resolution/typesolvers/AarTypeSolver.java:58: error: Resource Leak
+  resource of type `java.util.jar.JarFile` acquired by call to `JarFile(...)` at line 53 is not released after line 58.
+  56.               throw new IllegalArgumentException(String.format("The given file (%s) is malformed: entry classes.jar was not found", aarFile.getAbsolutePath()));
+  57.           }
+  58. >         delegate = new JarTypeSolver(jarFile.getInputStream(classesJarEntry));
+  59.       }
+  60.   
+
+Found 39 issues
+                                Issue Type(ISSUED_TYPE_ID): #
+                        Null Dereference(NULL_DEREFERENCE): 32
+  Inefficient Keyset Iterator(INEFFICIENT_KEYSET_ITERATOR): 4
+                              Resource Leak(RESOURCE_LEAK): 3
